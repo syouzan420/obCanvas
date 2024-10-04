@@ -24,7 +24,7 @@ drawToCanvas cx ies dg = prerender_ blank $ do
   let cnt = _cnt gm 
   let chrs = _chrs gm
   let chdf = mod cnt 2
-  C.clearRect cx 0 0 450 450
+  C.clearRect cx 0 0 400 400
   mapM_ (\(Ch chn _ _ cdir (V2 cpx cpy)) -> 
      C.drawImage cx (ies!!(chn*8+fromEnum cdir*2+chdf))
                              (fromIntegral cpx) (fromIntegral cpy)) chrs 

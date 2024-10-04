@@ -42,7 +42,7 @@ frontendBody ::
   ) => m ()
 frontendBody = do 
   elAttr "canvas" ("id" =: "canvas" <> "style" =: "background-color: #008080" 
-                <> "width" =: "450" <> "height" =: "450") blank
+                <> "width" =: "400" <> "height" =: "400") blank
   elAttr "div" ("style" =: "display:none;") $
     mapM_ (\nm -> elAttr "img" ("id"=:("ch"<>(T.pack . show) nm) <> "width"=:"32"
                   <> "height"=:"32" <> (charaSrc!!nm)) blank) 
