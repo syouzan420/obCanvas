@@ -24,8 +24,8 @@ project ./. ({ pkgs, ... }: {
   };
 
   android = {
-    applicationId = "org.yokop.rekisi";
-    displayName = "國史";
+    applicationId = "org.yokop.canvas";
+    displayName = "Canvas";
     isRelease = androidIsRelease;
     resources = reflex-platform.android.buildIcons {
       src = ./assets/chara.png;
@@ -35,6 +35,6 @@ project ./. ({ pkgs, ... }: {
       name = "0.1";
     };
   };
-  ios.bundleIdentifier = "org.yokop.rekisi";
-  ios.bundleName = "Rekisi";
+  ios.bundleIdentifier = "org.yokop.canvas";
+  ios.bundleName = "Canvas";
 })
