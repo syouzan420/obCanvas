@@ -1,0 +1,99 @@
+body {
+  touch-action: none;
+}
+
+p {
+  color: blue;  
+  font-size: 30px;
+}
+
+button {
+  user-select: none;
+  background-color: #BAFFBD;
+  margin: 3px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #FFF7BA;
+}
+
+#map {
+  touch-action: none;
+}
+.cen {
+  text-align: center;
+}
+
+.kai {
+  white-space: pre;
+  text-align: justify;
+  font: 400 18px monospace;
+}
+
+.pad {
+  padding: 1px 15px 2px;
+  margin: 5px;
+  font: 400 30px system-ui;
+  position: relative;
+  top: 15px;
+}
+.pad2 {
+  padding: 1px 15px 2px;
+  font: 400 30px system-ui;
+  position: relative;
+  top: 15px;
+  left: 145px;
+}
+.pad3 {
+  padding: 1px 15px 2px;
+  font: 400 30px system-ui;
+  position: relative;
+  top: 15px;
+  left: 75px;
+}
+.pad4 {
+  padding: 1px 10px 2px;
+  margin: 1px;
+  font: 400 25px system-ui;
+  position: relative;
+  top: 5px;
+}
+.status {
+  font: 400 15px system-ui;
+  position: relative;
+  top: 15px;
+  left: 75px;
+}
+.lnk {
+  font: 400 25px system-ui;
+  position: absolute;
+  top: 580px;
+  left: 250px;
+}
+
+.butn {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.flexbox {
+  display: flex;
+}
+.flexbox > div {
+  margin: 1px;
+  padding: 3px;
+}
+.tbox {
+  width: auto;
+  height: 300px;
+}
+.tate {
+  white-space: pre-wrap;
+  writing-mode: vertical-rl;
+  width: 100%;
+  overflow-x: auto;
+  font: 400 18px monospace;
+}
